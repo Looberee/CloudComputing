@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="30">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/shop1.css'/>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome <%= name %> to page </p>
+    <div class="show">
+      <%- select_box_str -%>
+      <%- table_str -%>
+    </div>
+    
+      <script>
+        window.setInterval(() => {
+          window.location.reload();
+        }, 10000)
+    </script>  
+  </body>
+  <a href="http://localhost:3000/logout" class="button-8">Logout</a>
+</html>
+
